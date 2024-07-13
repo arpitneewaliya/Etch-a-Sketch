@@ -1,5 +1,10 @@
 let container = document.querySelector('#container');
-let box, row;
+let box, row, num;
+
+let resizeBtn = document.querySelector('#resize');
+resizeBtn.addEventListener('click', () => {
+    num = +prompt('Enter the grid dimensions:', '');
+});
 
 for (let i=1; i<=16; i++) {
     row = document.createElement('div');
@@ -11,3 +16,13 @@ for (let i=1; i<=16; i++) {
         row.appendChild(box);
     }
 }
+
+let boxes = document.querySelectorAll('.boxes');
+let boxArr = [...boxes];
+
+for (const eachBox of boxArr) {
+    eachBox.addEventListener('mouseenter', () => {
+        eachBox.style.backgroundColor = '#8964fa';
+    });
+}
+

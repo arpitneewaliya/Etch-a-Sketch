@@ -1,9 +1,33 @@
+body {
+    margin: 0;
+}
+
 .boxes {
-    height: 40px;
-    width: 40px;
-    border: 2px solid black;
+    height: 36px;
+    width: 36px;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 
 .rows {
     display: flex;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resize {
+    padding: 8px;
+    width: 200px;
+    align-self: center;
 }
