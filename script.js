@@ -1,3 +1,4 @@
+let canvas = document.querySelector('#canvas');
 let container = document.querySelector('#container');
 let box, row, num;
 

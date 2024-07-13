@@ -18,6 +18,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 576px;
+    width: 576px;
 }
 
 .btnHolder {
@@ -30,4 +32,11 @@ body {
     padding: 8px;
     width: 200px;
     align-self: center;
+}
+
+#canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
