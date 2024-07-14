@@ -22,7 +22,7 @@ let boxArr = [...boxes];    // Converts the NodeList into an array
 
 for (const eachBox of boxArr) {
     eachBox.addEventListener('mouseenter', () => {
-        eachBox.style.backgroundColor = 'red';
+        eachBox.style.backgroundColor = 'black';
     });
 }
 
@@ -60,7 +60,7 @@ resizeBtn.addEventListener('click', () => {
 
     for (const eachBox of boxArr) {
         eachBox.addEventListener('mouseenter', () => {
-            eachBox.style.backgroundColor = 'red';
+            eachBox.style.backgroundColor = 'black';
         });
     }
     // Clear the drawing canvas.
@@ -71,4 +71,21 @@ resizeBtn.addEventListener('click', () => {
         }
     });
 
+});
+
+
+let resize = document.querySelector('#resize');
+resize.addEventListener('mousedown', () => {
+    resize.style.backgroundColor = '#99f8ff';
+});
+resize.addEventListener('mouseup', () => {
+    resize.style.backgroundColor = '#00eeff';
+});
+
+let clearBtn = document.querySelector('#clear');
+clearBtn.addEventListener('mousedown', () => {
+    clear.style.backgroundColor = '#99f8ff';
+});
+clearBtn.addEventListener('mouseup', () => {
+    clearBtn.style.backgroundColor = '#00eeff';
 });
