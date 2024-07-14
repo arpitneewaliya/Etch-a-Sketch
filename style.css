@@ -3,8 +3,8 @@ body {
 }
 
 .boxes {
-    height: 36px;
-    width: 36px;
+    height: 28px;
+    width: 28px;
     border: 1px solid black;
     box-sizing: border-box;
 }
@@ -18,25 +18,33 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 576px;
-    width: 576px;
+    /* height: 448px; */
+    /* width: 448px; */
 }
 
-.btnHolder {
+#btnHolder {
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    margin: 20px;
 }
 
-#resize {
+#resize,
+#clear {
     padding: 8px;
     width: 200px;
-    align-self: center;
+    margin-left: 10px;
 }
 
 #canvas {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.heading {
+    color: #ff00d4;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

@@ -18,8 +18,8 @@ for (let i=1; i<=16; i++) {
     }
 }
 
-let boxes = document.querySelectorAll('.boxes');
-let boxArr = [...boxes];
+let boxes = document.querySelectorAll('.boxes');    // Stores a NodeList
+let boxArr = [...boxes];    // Converts the NodeList into an array
 
 for (const eachBox of boxArr) {
     eachBox.addEventListener('mouseenter', () => {
@@ -27,3 +27,10 @@ for (const eachBox of boxArr) {
     });
 }
 
+// Clear the drawing canvas.
+let clear = document.querySelector('#clear');
+clear.addEventListener('click', function () {
+    for (const eachBox of boxArr) {
+        eachBox.style.backgroundColor = 'white';
+    }
+});
