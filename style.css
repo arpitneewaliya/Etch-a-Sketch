@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
 body {
     margin: 0;
+    background-color: rgb(167, 167, 167);
 }
 
 .boxes {
-    height: 28px;
-    width: 28px;
+    /* height: 40px; */
+    /* width: 40px; */
     border: 1px solid black;
     box-sizing: border-box;
 }
@@ -18,8 +20,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 448px; */
-    /* width: 448px; */
+    height: 640px;
+    width: 640px;
+    background-color: white;
+    border: 5px solid #00eeff;
 }
 
 #btnHolder {
@@ -27,7 +31,8 @@ body {
     /* flex-direction: column; */
     justify-content: center;
     /* align-items: center; */
-    margin: 20px;
+    margin-bottom: 20px;
+    margin-top: 0;
 }
 
 #resize,
@@ -35,6 +40,13 @@ body {
     padding: 8px;
     width: 200px;
     margin-left: 10px;
+    border-radius: 10px;
+    background-color: #00eeff;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    border: none;
+    /* border: 5px solid #00eeff;    */
 }
 
 #canvas {
@@ -44,7 +56,9 @@ body {
 }
 
 .heading {
-    color: #ff00d4;
+    margin: 0;
+    color: #f700ff;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    font-family: "Ga Maamli", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
