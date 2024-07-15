@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playwrite+CL:wght@100..400&display=swap');
 body {
     margin: 0;
-    background-color: rgb(167, 167, 167);
+    background-color: rgb(110, 110, 110);
 }
 
 .boxes {
@@ -20,32 +20,34 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 640px;
-    width: 640px;
+    height: 480px;
+    width: 480px;
     background-color: white;
     border: 5px solid #00eeff;
 }
 
 #btnHolder {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
-    /* align-items: center; */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 0;
 }
 
 #resize,
 #clear {
-    padding: 8px;
-    width: 200px;
-    margin-left: 10px;
-    border-radius: 10px;
+    padding: 6px;
+    width: 150px;
+    border-radius: 60px;
     background-color: #00eeff;
     color: white;
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 14px;
+    font-weight: 700;
     border: 2px solid white;
+    box-sizing: border-box;
+}
+
+#clear {
+    margin-left: 20px;
 }
 
 #canvas {
@@ -56,8 +58,8 @@ body {
 
 .heading {
     margin: 0;
-    color: black;
+    color: white;
     text-align: center;
-    font-size: 100px;
-    font-family: "Ga Maamli", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-family: "Orbitron", sans-serif;
 }
