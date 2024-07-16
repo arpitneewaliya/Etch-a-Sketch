@@ -85,19 +85,29 @@ resizeBtn.addEventListener('click', () => {
 let resize = document.querySelector('#resize');
 let clearBtn = document.querySelector('#clear');
 let random_colors = document.querySelector('#random_colors');
+let single = document.querySelector('#single');
 
 function hoverEffect (btn) {
-    btn.addEventListener('mousedown', () => {
+    btn.addEventListener('mouseenter', () => {
         btn.style.backgroundColor = '#99f8ff';
+        btn.style.color = 'white';
+        btn.style.fontSize = '15px';
     });
-    btn.addEventListener('mouseup', () => {
+    btn.addEventListener('mouseout', () => {
+        btn.style.backgroundColor = '#00eeff';
+        btn.style.color = '#202020';
+        btn.style.fontSize = '14px';
+    });
+    btn.addEventListener('click', () => {
         btn.style.backgroundColor = '#00eeff';
     });
+    
 }
 
 hoverEffect(resize);
 hoverEffect(clearBtn);
 hoverEffect(random_colors);
+hoverEffect(single);
 
 
 random_colors.addEventListener('click', () => {
@@ -113,3 +123,13 @@ random_colors.addEventListener('click', () => {
 function RandomColors() {
     return Math.floor(Math.random()*255);
 }
+
+single.addEventListener('click', () => {
+    let boxes = document.querySelectorAll('.boxes');
+    let boxArr = [...boxes];
+    for (const eachBox of boxArr) {
+        eachBox.addEventListener('mouseenter', () => {
+            eachBox.style.backgroundColor = 'black';
+        });
+    }
+});

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playwrite+CL:wght@100..400&display=swap');
 body {
     margin: 0;
-    background-color: rgb(110, 110, 110);
+    background-color: #202020;
 }
 
 .boxes {
@@ -23,7 +23,7 @@ body {
     height: 480px;
     width: 480px;
     background-color: white;
-    border: 5px solid #00eeff;
+    border: 8px solid #00eeff;
 }
 
 #btnHolder {
@@ -35,22 +35,28 @@ body {
 
 #resize,
 #clear,
-#random_colors {
+#random_colors,
+#single {
     padding: 6px;
     width: 150px;
     border-radius: 60px;
     background-color: #00eeff;
-    color: white;
+    color: #202020;
     font-size: 14px;
     font-weight: 700;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     box-sizing: border-box;
     cursor: pointer;
+    font-family: "Orbitron", sans-serif;
 }
 
 #clear {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+#single {
+    margin-left: 20px;
 }
 
 #canvas {
@@ -66,3 +72,4 @@ body {
     font-size: 40px;
     font-family: "Orbitron", sans-serif;
 }
+
