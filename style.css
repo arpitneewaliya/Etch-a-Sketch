@@ -34,7 +34,8 @@ body {
 }
 
 #resize,
-#clear {
+#clear,
+#random_colors {
     padding: 6px;
     width: 150px;
     border-radius: 60px;
@@ -44,10 +45,12 @@ body {
     font-weight: 700;
     border: 2px solid white;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 #clear {
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 #canvas {

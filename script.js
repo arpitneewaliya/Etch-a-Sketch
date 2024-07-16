@@ -79,23 +79,37 @@ resizeBtn.addEventListener('click', () => {
             eachBox.style.backgroundColor = 'white';
         }
     });
-
 });
 
 
 let resize = document.querySelector('#resize');
-resize.addEventListener('mousedown', () => {
-    resize.style.backgroundColor = '#99f8ff';
-});
-resize.addEventListener('mouseup', () => {
-    resize.style.backgroundColor = '#00eeff';
-});
-
-
 let clearBtn = document.querySelector('#clear');
-clearBtn.addEventListener('mousedown', () => {
-    clear.style.backgroundColor = '#99f8ff';
+let random_colors = document.querySelector('#random_colors');
+
+function hoverEffect (btn) {
+    btn.addEventListener('mousedown', () => {
+        btn.style.backgroundColor = '#99f8ff';
+    });
+    btn.addEventListener('mouseup', () => {
+        btn.style.backgroundColor = '#00eeff';
+    });
+}
+
+hoverEffect(resize);
+hoverEffect(clearBtn);
+hoverEffect(random_colors);
+
+
+random_colors.addEventListener('click', () => {
+    let boxes = document.querySelectorAll('.boxes');
+    let boxArr = [...boxes];
+    for (const eachBox of boxArr) {
+        eachBox.addEventListener('mouseenter', () => {
+            eachBox.style.backgroundColor = `rgb(${RandomColors()}, ${RandomColors()}, ${RandomColors()})`;
+        });
+    }
 });
-clearBtn.addEventListener('mouseup', () => {
-    clearBtn.style.backgroundColor = '#00eeff';
-});
+
+function RandomColors() {
+    return Math.floor(Math.random()*255);
+}
