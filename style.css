@@ -7,7 +7,7 @@ body {
 .boxes {
     /* height: 40px; */
     /* width: 40px; */
-    border: 1px solid white;
+    border: 1px solid rgb(209, 208, 208);
     box-sizing: border-box;
 }
 

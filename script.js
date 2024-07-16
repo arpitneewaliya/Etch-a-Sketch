@@ -39,7 +39,7 @@ let resizeBtn = document.querySelector('#resize');
 resizeBtn.addEventListener('click', () => {
     let num;
     while (true) {
-        num = +prompt('Enter a number between 1 and 100:', '16');
+        num = +prompt('Enter the number of squares you want on each side (between 1 and 100):', '16');
         if (!isNaN(num) && num >=1 && num <=100) {
             break;
         } else {
